@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>task 1</h1>
+	<form>
+		<label for="username">Введіть ім'я користувача:</label>
+		<input type="text" id="username" oninput="validateInput(this)">
+	</form>
+
+	<!-- TASK 2 -->
+	<h1>Task 2</h1>
+	<button onclick="openModal()">Open</button>
+	<div id="modal__window" class="modal">
+		<div class="modal-content">
+			<div class="close" onclick="closeModal()">&times;</div>
+			<p>modal window</p>
+			<button onclick="closeModal()">Close</button>
+		</div>
+	</div>
+
+	<!-- TASK 3 -->
+	<h1>Task 3</h1>
+	<div id="football-field">
+		<div id="goal-left"></div>
+		<div id="goal-right"></div>
+		<div id="football"></div>
+	</div>
+	<!-- TASK 4 -->
+	<h1>Task 4</h1>
+	<div class="traffic-light">
+		<div class="light red"></div>
+		<div class="light yellow"></div>
+		<div class="light green"></div>
+	</div>
+	<button class="button" onclick="trafficLight()">Переключити</button>
+
+	<!-- TASK 5 -->
+	<h1>Task 5</h1>
+	<ul class="book-list">
+		<li onclick="changeBookColor(this)">Книга 1</li>
+		<li onclick="changeBookColor(this)">Книга 2</li>
+		<li onclick="changeBookColor(this)">Книга 3</li>
+		<li onclick="changeBookColor(this)">Книга 4</li>
+	</ul>
+
+	<!-- TASK 6 -->
+	<h1>Task 6</h1>
+	<div class="btn" onmouseover="showTooltip(this, 'Підказка зверху')">Кнопка 1</div>
+	<div class="btn" onmouseover="showTooltip(this, 'Підказка знизу')">Кнопка 2</div>
+	<div class="btn" onmouseover="showTooltip(this, 'Ще одна підказка')">Кнопка 3</div>
+	<!-- TASK 7 -->
+	<h1>Task 7</h1>
+	<ul>
+		<li class="expanded">Директорія 1
+			<ul>
+				<li class="collapsed">Піддиректорія 1.1
+					<ul>
+						<li>Файл 1.1.1</li>
+						<li>Файл 1.1.2</li>
+					</ul>
+				</li>
+				<li>Файл 1.2</li>
+			</ul>
+		</li>
+		<li>Файл 2</li>
+		<li class="expanded">Директорія 3
+			<ul>
+				<li>Файл 3.1</li>
+				<li>Файл 3.2</li>
+			</ul>
+		</li>
+	</ul>
+	<!-- TASK8 -->
+	<h1>Task 8</h1>
+	<div class="resizable-box">
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore iste cum alias eveniet quisquam iusto
+			asperiores ipsam placeat! Magnam eaque maiores quibusdam sapiente ipsa nobis odio pariatur nostrum non?</p>
+
+	</div>
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
